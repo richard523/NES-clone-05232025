@@ -1,0 +1,95 @@
+<mxGraphModel dx="1438" dy="790" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    <!-- Major Components -->
+    <mxCell id="core_group" value="Core" style="shape=rectangle;whiteSpace=wrap;html=1;fontStyle=1;fontSize=14;fillColor=#fff2cc;strokeColor=#d6b656;verticalAlign=top;align=center;" vertex="1" parent="1">
+      <mxGeometry x="200" y="150" width="700" height="450" as="geometry" />
+    </mxCell>
+    <mxCell id="renderer" value="Renderer" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="950" y="380" width="120" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="info" value="Info" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="50" y="80" width="120" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="data" value="Data" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="50" y="160" width="120" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="python" value="Python" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="50" y="300" width="120" height="60" as="geometry" />
+    </mxCell>
+
+    <!-- Core Sub-Components -->
+    <mxCell id="config" value="Config" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="core_group">
+      <mxGeometry x="30" y="40" width="100" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="simulator" value="Simulator" style="shape=rectangle;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="core_group">
+      <mxGeometry x="150" y="180" width="120" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="rpc" value="RPC" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="core_group">
+      <mxGeometry x="300" y="40" width="100" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="vsda" value="VSDA" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="core_group">
+      <mxGeometry x="150" y="100" width="120" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="visualizer" value="Visualizer" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="core_group">
+      <mxGeometry x="400" y="180" width="120" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="netmorph" value="Netmorph" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="core_group">
+      <mxGeometry x="150" y="260" width="120" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="profiling" value="Profiling" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="core_group">
+      <mxGeometry x="30" y="350" width="100" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="util" value="Util" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="core_group">
+      <mxGeometry x="550" y="40" width="100" height="50" as="geometry" />
+    </mxCell>
+    
+    <!-- Arrows / Edges -->
+    <mxCell id="arrow_config_core" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" edge="1" parent="1" source="config" target="core_group">
+      <mxGeometry relative="1" as="geometry">
+          <mxPoint x="135" y="205" as="sourcePoint"/>
+          <mxPoint x="200" y="205" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+     <mxCell id="arrow_data_core" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;exitX=1;exitY=0.5;" edge="1" parent="1" source="data" target="core_group">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="arrow_rpc_simulator" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rpc" target="simulator">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="arrow_rpc_vsda" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rpc" target="vsda">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="arrow_rpc_visualizer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rpc" target="visualizer">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="arrow_rpc_netmorph" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rpc" target="netmorph">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="arrow_vsda_simulator" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vsda" target="simulator">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="arrow_visualizer_simulator" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="visualizer" target="simulator">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="arrow_visualizer_renderer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="visualizer" target="renderer">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="arrow_netmorph_simulator" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="netmorph" target="simulator">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="arrow_python_rpc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" edge="1" parent="1" source="python" target="rpc">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+     <mxCell id="arrow_profiling_core" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=0.05;entryY=0.9;" edge="1" parent="1" source="profiling" target="core_group">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="arrow_util_core" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;entryX=0.85;entryY=0.9;" edge="1" parent="1" source="util" target="core_group">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+     <mxCell id="arrow_info_core" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.05;entryY=0.1;exitX=1;exitY=0.5;" edge="1" parent="1" source="info" target="core_group">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>

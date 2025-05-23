@@ -1,0 +1,5 @@
+BrainGenix-NES/Source/Core/Simulator/Engine.cpp
+BrainGenix-NES/Source/Core/RPC/RPCManager.cpp
+BrainGenix-NES/Source/Renderer/BG/Renderer/BaseRenderer.cpp
+BrainGenix-NES/Source/Core/VSDA/VSDARPCInterface.cpp
+BrainGenix-NES/Source/Core/Visualizer/Visualizer.cpp
